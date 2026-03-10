@@ -222,9 +222,10 @@
     </audio>
     <script>
         const music = document.getElementById("bgmusic");
-        document.addEventListener("click", () => {
-            music.play();
-        }, { once: true });
+        document.addEventListener("touchstart", startmusic, { once: true });
+        function startmusic() {
+            music.play().catch(() => { });
+        }
     </script>
     <div class="snap-container">
         <section class="p1">
@@ -322,7 +323,66 @@
         </div>
     </section>
     </div>
-    <div class="card">
+    <style>
+        .sorry-card{
+    width: 320px;
+    margin: 60px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+}
+
+.sorry-card h2{
+    color: #ff4d6d;
+    margin-bottom: 15px;
+}
+
+.sorry-card p{
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.ending{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ff4d6d;
+}
+    </style>
+    <div class="sorry-card">
+        <h2>To Someone Very Special 💌</h2>
+        <p>
+            I know I made mistakes, and I truly regret them.
+            From the bottom of my heart, I want to say that I am really sorry for everything.
+        </p>
+
+        <p>
+            I am not asking you to call me or text me every day.
+            I just want one chance, just once, to show you that I can make things right.
+        </p>
+
+        <p>
+            Sometimes when my phone rings, for a moment I think it might be you.
+            But when I realize it isn’t, it breaks my heart a little more.
+        </p>
+
+        <p>
+            Please give me only one chance to fix what I broke.
+            I promise I will never repeat the mistakes I made before.
+        </p>
+
+        <p>
+            You trusted me once, and that trust meant everything to me.
+            I hope someday you can trust me again.
+        </p>
+
+        <p class="ending">
+            No matter what happens, you will always be special to me. ❤️
+        </p>
+    </div>
 
     </div>
     <script>
