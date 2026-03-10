@@ -217,8 +217,16 @@
 
 <body>
 
+    <audio id="bgmusic" loop>
+        <source src="./paulyudin-romantic-background-155778 (1).mp3" type="audio/mpeg"> your browser does not support the audio element.
+    </audio>
+    <script>
+        const music = document.getElementById("bgmusic");
+        document.addEventListener("mouseover", () => {
+            music.play();
+        }, { once: true });
+    </script>
     <div class="snap-container">
-
         <section class="p1">
             <div class="container">
                 <div class="row justify-content-center">
@@ -313,9 +321,10 @@
             </div>
         </div>
     </section>
+    </div>
+    <div class="card">
 
     </div>
-
     <script>
         // Floating Emoji System
         const emojis = ['❤️', '💖', '✨', '🌸', '🌹', '🌷', '🌺', '🦋'];
