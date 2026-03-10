@@ -212,6 +212,7 @@
             transform: translateY(-3px);
             color: white;
         }
+
         .sorry-card {
             width: 320px;
             margin: 60px auto;
@@ -247,11 +248,15 @@
     <audio id="bgmusic" loop>
         <source src="./background music.mp3" type="audio/mpeg">
     </audio>
+
     <script>
         const music = document.getElementById("bgmusic");
-        document.addEventListener("touchstart", startmusic, { once: true });
-        function startmusic() {
-            music.play().catch(() => { });
+
+        // Start music on first interaction (tap/click)
+        document.body.addEventListener("touchstart", startMusic, {once : true});
+        document.body.addEventListener("click" , startMusic, {once : true});
+        function startMusic() {
+            music.play().catch(() => {});
         }
     </script>
     <div class="snap-container">
