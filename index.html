@@ -250,13 +250,14 @@
     </audio>
 
     <script>
-        const music = document.getElementById("bgmusic");
+const music = document.getElementById("bgmusic");
+document.body.addEventListener('touchstart', startMusic, { once: true });
+document.body.addEventListener('click', startMusic, { once: true });
 
-        // Start music on first interaction (tap/click)
-        document.body.addEventListener("touchstart", startMusic, {once : true});
-        document.body.addEventListener("click" , startMusic, {once : true});
-        function startMusic() {music.play().catch(() => {}); }
-    </script>
+function startMusic() {
+    music.play().catch(() => {});
+}
+</script>
     <div class="snap-container">
         <section class="p1">
             <div class="container">
