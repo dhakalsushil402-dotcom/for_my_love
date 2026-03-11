@@ -250,14 +250,14 @@
     </audio>
 
     <script>
-const music = document.getElementById("bgmusic");
-document.body.addEventListener('touchstart', startMusic, { once: true });
-document.body.addEventListener('click', startMusic, { once: true });
+        const music = document.getElementById("bgmusic");
+        document.body.addEventListener('touchstart', startMusic, { once: true });
+        document.body.addEventListener('click', startMusic, { once: true });
 
-function startMusic() {
-    music.play().catch(() => {});
-}
-</script>
+        function startMusic() {
+            music.play().catch(() => { });
+        }
+    </script>
     <div class="snap-container">
         <section class="p1">
             <div class="container">
@@ -336,54 +336,54 @@ function startMusic() {
                     </p>
                 </div>
             </div>
-    </div>
-    </section>
+        </section>
 
-    <section class="p6">
-        <div class="container">
-            <div class="pumping-heart">💍</div>
-            <div class="glass-card mx-auto">
-                <h1>Infinity & Beyond</h1>
-                <p>I love you more than words, code, or these flowers could ever show. You are my forever girl.</p>
-                <button class="btn btn-custom mt-3" onclick="reveal()">Click for a surprise</button>
+        <section class="p6">
+            <div class="container">
+                <div class="pumping-heart">💍</div>
+                <div class="glass-card mx-auto">
+                    <h1>Infinity & Beyond</h1>
+                    <p>I love you more than words, code, or these flowers could ever show. You are my forever girl.</p>
+                    <button class="btn btn-custom mt-3" onclick="reveal()">Click for a surprise</button>
 
-                <div id="hidden-msg" class="mt-4 d-none">
-                    <h2 class="text-white" style="font-family: 'Dancing Script';">Forever & Always ❤️</h2>
+                    <div id="hidden-msg" class="mt-4 d-none">
+                        <h2 class="text-white" style="font-family: 'Dancing Script';">Forever & Always ❤️</h2>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <div class="sorry-card">
+            <h2>To Someone Very Special 💌</h2>
+            <p>
+                I know I made mistakes, and I truly regret them.
+                From the bottom of my heart, I want to say that I am really sorry for everything.
+            </p>
+
+            <p>
+                I am not asking you to call me or text me every day.
+                I just want one chance, just once, to show you that I can make things right.
+            </p>
+
+            <p>
+                Sometimes when my phone rings, for a moment I think it might be you.
+                But when I realize it isn’t, it breaks my heart a little more.
+            </p>
+
+            <p>
+                Please give me only one chance to fix what I broke.
+                I promise I will never repeat the mistakes I made before.
+            </p>
+
+            <p>
+                You trusted me once, and that trust meant everything to me.
+                I hope someday you can trust me again.
+            </p>
+
+            <p class="ending">
+                No matter what happens, you will always be special to me. ❤️
+            </p>
         </div>
-    </section>
-
-    <div class="sorry-card">
-        <h2>To Someone Very Special 💌</h2>
-        <p>
-            I know I made mistakes, and I truly regret them.
-            From the bottom of my heart, I want to say that I am really sorry for everything.
-        </p>
-
-        <p>
-            I am not asking you to call me or text me every day.
-            I just want one chance, just once, to show you that I can make things right.
-        </p>
-
-        <p>
-            Sometimes when my phone rings, for a moment I think it might be you.
-            But when I realize it isn’t, it breaks my heart a little more.
-        </p>
-
-        <p>
-            Please give me only one chance to fix what I broke.
-            I promise I will never repeat the mistakes I made before.
-        </p>
-
-        <p>
-            You trusted me once, and that trust meant everything to me.
-            I hope someday you can trust me again.
-        </p>
-
-        <p class="ending">
-            No matter what happens, you will always be special to me. ❤️
-        </p>
     </div>
     <script>
         // Floating Emoji System
