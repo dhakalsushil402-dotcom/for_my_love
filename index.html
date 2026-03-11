@@ -249,15 +249,7 @@
         <source src="./background music.mp3" type="audio/mpeg">
     </audio>
 
-    <script>
-        const music = document.getElementById("bgmusic");
-        document.body.addEventListener('touchstart', startMusic, { once: true });
-        document.body.addEventListener('click', startMusic, { once: true });
 
-        function startMusic() {
-            music.play().catch(() => { });
-        }
-    </script>
     <div class="snap-container">
         <section class="p1">
             <div class="container">
@@ -352,38 +344,39 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="sorry-card">
+                <h2>To Someone Very Special 💌</h2>
+                <p>
+                    I know I made mistakes, and I truly regret them.
+                    From the bottom of my heart, I want to say that I am really sorry for everything.
+                </p>
 
-        <div class="sorry-card">
-            <h2>To Someone Very Special 💌</h2>
-            <p>
-                I know I made mistakes, and I truly regret them.
-                From the bottom of my heart, I want to say that I am really sorry for everything.
-            </p>
+                <p>
+                    I am not asking you to call me or text me every day.
+                    I just want one chance, just once, to show you that I can make things right.
+                </p>
 
-            <p>
-                I am not asking you to call me or text me every day.
-                I just want one chance, just once, to show you that I can make things right.
-            </p>
+                <p>
+                    Sometimes when my phone rings, for a moment I think it might be you.
+                    But when I realize it isn’t, it breaks my heart a little more.
+                </p>
 
-            <p>
-                Sometimes when my phone rings, for a moment I think it might be you.
-                But when I realize it isn’t, it breaks my heart a little more.
-            </p>
+                <p>
+                    Please give me only one chance to fix what I broke.
+                    I promise I will never repeat the mistakes I made before.
+                </p>
 
-            <p>
-                Please give me only one chance to fix what I broke.
-                I promise I will never repeat the mistakes I made before.
-            </p>
+                <p>
+                    You trusted me once, and that trust meant everything to me.
+                    I hope someday you can trust me again.
+                </p>
 
-            <p>
-                You trusted me once, and that trust meant everything to me.
-                I hope someday you can trust me again.
-            </p>
-
-            <p class="ending">
-                No matter what happens, you will always be special to me. ❤️
-            </p>
-        </div>
+                <p class="ending">
+                    No matter what happens, you will always be special to me. ❤️
+                </p>
+            </div>
+        </section>
     </div>
     <script>
         // Floating Emoji System
@@ -409,6 +402,15 @@
                 spread: 70,
                 origin: { y: 0.8 }
             });
+        }
+    </script>
+    <script>
+        const music = document.getElementById("bgmusic");
+        document.body.addEventListener('touchstart', startMusic, { once: true });
+        document.body.addEventListener('click', startMusic, { once: true });
+
+        function startMusic() {
+            music.play().catch(() => { });
         }
     </script>
 </body>
